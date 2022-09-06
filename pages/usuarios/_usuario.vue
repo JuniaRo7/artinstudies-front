@@ -20,7 +20,14 @@ export default {
   methods: {
     excluir() {
       const idUsuario = this.$route.params.usuario
-      this.$axios.delete('/deletarUsuario/' + idUsuario)
+      console.log(idUsuario)
+      this.$axios
+        .delete('/deletarUsuario/' + idUsuario)
+        .then((response) => {
+          if (response.status === 200) alert('Usuário removido!')
+          this.$router.go(-1);
+        })
+        .catch((error) => console.log(error))
     },
   },
 }
