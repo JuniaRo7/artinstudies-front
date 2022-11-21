@@ -16,6 +16,7 @@
 <script>
 import ItemListaUsuarios from '~/components/ItemListaUsuarios.vue'
 export default {
+  auth: false,
   data() {
     return {
       usuarios: [],

@@ -6,7 +6,7 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap"
       rel="stylesheet"
     />
-    <button type="button" id="continuar">Continuar</button>
+    <button type="button" id="continuar"><a href="/tela-Login">Continuar</a></button>
   </div>
 </template>
 
